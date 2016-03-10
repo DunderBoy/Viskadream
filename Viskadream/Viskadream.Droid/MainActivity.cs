@@ -12,7 +12,7 @@ using Android.Support.V4.Widget;
 
 namespace Viskadream.Droid {
     [Activity(Label = "Viskadream.Droid", MainLauncher = true, Icon = "@drawable/icon", Theme = "@style/viskadreamTheme")]
-    public class MainActivity : ActionBarActivity {
+    public class MainActivity : AppCompatActivity {
         private SupportToolbar mToolbar;
         private MyActionBarDrawerToggle mDrawerToggle;
         private DrawerLayout mDrawerLayout;
@@ -40,6 +40,7 @@ namespace Viskadream.Droid {
             mDrawerLayout.SetDrawerListener(mDrawerToggle);
             SupportActionBar.SetHomeButtonEnabled(true);
             SupportActionBar.SetDisplayShowTitleEnabled(true);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             mDrawerToggle.SyncState();
 
 
