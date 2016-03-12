@@ -17,7 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <!-- The Main Content View-->
-        <RelativeLayout
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
@@ -25,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:text="Support V7 Action Bar Drawer Toggle"
                 android:layout_centerInParent="true" />
-        </RelativeLayout>
+        </FrameLayout>
     <!-- The Left Navigation Drawer -->
         <ListView
             android:id="@+id/left_drawer"
