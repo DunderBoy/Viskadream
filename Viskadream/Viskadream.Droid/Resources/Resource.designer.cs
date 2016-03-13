@@ -1463,7 +1463,7 @@ namespace Viskadream.Droid
 			public const int fragmentContainer = 2131427410;
 			
 			// aapt resource value: 0x7f0b004f
-			public const int fragmentTextView = 2131427407;
+			public const int frg1Content = 2131427407;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int home = 2131427332;
