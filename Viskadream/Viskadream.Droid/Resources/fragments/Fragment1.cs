@@ -47,6 +47,7 @@ namespace Viskadream.Droid {
                 string json = Encoding.UTF8.GetString(e.Result);
                 //Placing the responded json into a mItemList
                 mItemList = JsonConvert.DeserializeObject<List<string>>(json);
+                
 
                 mItemsAdapter = new ArrayAdapter<string>(Activity, Android.Resource.Layout.SimpleListItem1, mItemList);
                 mContent.Adapter = mItemsAdapter;

@@ -4,10 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#673AB7">
-    <TextView
-        android:layout_width="wrap_content"
+    <VideoView
+        android:id="@+id/TwitchPlayer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <Button
+        android:text="Pause"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Fragment 2"
-        android:textColor="#000"
-        android:layout_centerInParent="true" />
+        android:id="@+id/btnPlayerPause"
+        android:layout_below="@+id/TwitchPlayer" />
 </RelativeLayout>
