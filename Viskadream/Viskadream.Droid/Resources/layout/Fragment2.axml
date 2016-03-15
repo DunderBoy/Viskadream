@@ -3,7 +3,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#673AB7">
+    android:background="#673AB7"
+    android:minWidth="25px"
+    android:minHeight="25px">
     <VideoView
         android:id="@+id/TwitchPlayer"
         android:layout_width="fill_parent"
