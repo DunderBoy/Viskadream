@@ -72,6 +72,8 @@
     <Compile Include="fragments\Fragment3.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tournament.cs" />
+    <Compile Include="TournamentListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -85,6 +87,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Fragment3.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\tournament_row.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

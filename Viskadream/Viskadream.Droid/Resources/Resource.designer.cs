@@ -1375,8 +1375,8 @@ namespace Viskadream.Droid
 			// aapt resource value: 0x7f0b005a
 			public const int action_divider = 2131427418;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int action_help = 2131427427;
+			// aapt resource value: 0x7f0b0068
+			public const int action_help = 2131427432;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1485,6 +1485,9 @@ namespace Viskadream.Droid
 			
 			// aapt resource value: 0x7f0b0028
 			public const int image = 2131427368;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int imgPic = 2131427427;
 			
 			// aapt resource value: 0x7f0b0061
 			public const int info = 2131427425;
@@ -1629,6 +1632,18 @@ namespace Viskadream.Droid
 			
 			// aapt resource value: 0x7f0b002e
 			public const int topPanel = 2131427374;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int txtName = 2131427428;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int txtScore1 = 2131427429;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int txtScore2 = 2131427431;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int txtScoreDivider = 2131427430;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;
@@ -1805,6 +1820,9 @@ namespace Viskadream.Droid
 			
 			// aapt resource value: 0x7f030028
 			public const int support_simple_spinner_dropdown_item = 2130903080;
+			
+			// aapt resource value: 0x7f030029
+			public const int tournament_row = 2130903081;
 			
 			static Layout()
 			{

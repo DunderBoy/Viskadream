@@ -72,7 +72,7 @@ namespace Viskadream.Droid {
 
             mDrawerLayout.SetDrawerListener(mDrawerToggle);
             SupportActionBar.SetHomeButtonEnabled(true);
-            SupportActionBar.SetDisplayShowTitleEnabled(true);
+            SupportActionBar.SetDisplayShowTitleEnabled(false);
             SupportActionBar.SetDisplayHomeAsUpEnabled(true);
             mDrawerToggle.SyncState();
 

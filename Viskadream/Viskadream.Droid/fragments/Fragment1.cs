@@ -13,11 +13,12 @@ namespace Viskadream.Droid {
 
         //Global Variables
         private ListView mContent;
-        private ArrayAdapter mItemsAdapter;
-        private List<string> mItemList;
         //Web Communication
         private WebClient mClient;
         private Uri mUrl;
+        //
+        private BaseAdapter<Tournament> mAdapter;
+        private List<Tournament> mTournaments;
 
         public override void OnCreate(Bundle savedInstanceState) {
             base.OnCreate(savedInstanceState);
@@ -27,12 +28,11 @@ namespace Viskadream.Droid {
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View view = inflater.Inflate(Resource.Layout.Fragment1, container, false);
-
             mContent = view.FindViewById<ListView>(Resource.Id.frg1Content);
 
             //Creating a webclient
             mClient = new WebClient();
-            mUrl = new Uri("http://android-sql-dunderboy.c9users.io/getUsers.php");
+            mUrl = new Uri("http://android-sql-dunderboy.c9users.io/GetTournaments.php");
 
             //Communication to php
             mClient.DownloadDataAsync(mUrl);
@@ -43,15 +43,10 @@ namespace Viskadream.Droid {
 
         private void MClient_DownloadDataCompleted(object sender, DownloadDataCompletedEventArgs e) {
             Activity.RunOnUiThread(() => {
-                //Encode the web response
-                string json = Encoding.UTF8.GetString(e.Result);
-                //Placing the responded json into a mItemList
-                mItemList = JsonConvert.DeserializeObject<List<string>>(json);
-                
-
-                mItemsAdapter = new ArrayAdapter<string>(Activity, Android.Resource.Layout.SimpleListItem1, mItemList);
-                mContent.Adapter = mItemsAdapter;
-
+               string json = Encoding.UTF8.GetString(e.Result);
+                mTournaments = JsonConvert.DeserializeObject<List<Tournament>>(json);
+                mAdapter = new TournamentListAdapter(Activity, Resource.Layout.tournament_row, mTournaments);
+                mContent.Adapter = mAdapter;
             });
         }
     }
