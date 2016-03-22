@@ -1,12 +1,5 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
 using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
@@ -41,11 +34,8 @@ namespace Viskadream.Droid {
                 row = LayoutInflater.From(mContext).Inflate(mLayout, parent, false);
 
             row.FindViewById<TextView>(Resource.Id.txtName).Text = mTournaments[position].Name;
-            row.FindViewById<TextView>(Resource.Id.txtScore1).Text = mTournaments[position].score1.ToString();
-            row.FindViewById<TextView>(Resource.Id.txtScore2).Text = mTournaments[position].score2.ToString();
 
             return row;
         }
-
     }
 }

@@ -19,7 +19,7 @@
         android:text="HearthStone"
         android:layout_width="0dp"
         android:layout_height="fill_parent"
-        android:layout_weight="55"
+        android:layout_weight="45"
         android:gravity="center_vertical"
         android:textSize="18sp"
         android:textColor="#000"
@@ -28,32 +28,14 @@
         android:orientation="horizontal"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="10">
+        android:layout_weight="30">
         <TextView
-            android:id="@+id/txtScore1"
-            android:text="0"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="65"
+            android:id="@+id/txtWinner"
+            android:text="Johan"
             android:gravity="center"
-            android:textSize="18sp"
-            android:textColor="#000" />
-        <TextView
-            android:id="@+id/txtScoreDivider"
-            android:text="="
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="65"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:textColor="#000" />
-        <TextView
-            android:id="@+id/txtScore2"
-            android:text="0"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:layout_weight="65"
-            android:gravity="center"
             android:textSize="18sp"
             android:textColor="#000" />
     </LinearLayout>
