@@ -51,6 +51,7 @@ namespace Viskadream.Droid {
             //Reference score in match
             int score1 = mMatches[position].score1;
             int score2 = mMatches[position].score2;
+            int i = 0;
 
             //Place text in all TextViews.
             mMatchName.Text = mMatches[position].Name;
@@ -68,6 +69,8 @@ namespace Viskadream.Droid {
             //If matchNr is odd change background color!
             if (mMatches[position].matchNr % 2 != 0)
                 relMatchLayout.SetBackgroundColor(Gray);
+
+            //System.Console.WriteLine(mMatches[position].matchNr);
 
             return row;
         }

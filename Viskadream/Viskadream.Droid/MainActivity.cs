@@ -109,7 +109,7 @@ namespace Viskadream.Droid {
             }
         }
 
-        private void ReplaceFragment(SupportFragment fragment) {
+        public void ReplaceFragment(SupportFragment fragment) {
             if (fragment.IsVisible)
                 return;
 
